@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+}
+
+.logo img {
+    width: 80%;
+    height: auto;
+}
+
+
+.contenedor-menu{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #333;
+    color: white;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    color: #ffb300;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-ver {
+    padding: 10px 20px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-ver:hover {
+    background-color: #003399;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+   
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .image-content {
+        margin-top: 20px;
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .menu a{
+        flex-direction: column;
+        
+        
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
